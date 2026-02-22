@@ -18,6 +18,8 @@ int main()
     cout << "\n\n";
     cout << arr.front() << "\n";
     cout << arr.back() << "\n";
+    cout << arr.size() << "\n";
+    // cout << arr.back() << "\n";
 
     return 0;
 }
