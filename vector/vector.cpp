@@ -24,6 +24,8 @@ int main()
     arr.pop_back();
 
     arr.insert(arr.begin(), 7);
+
+    arr.erase(arr.begin());
     
     for (auto it = arr.begin(); it != arr.end(); it++)
     {
