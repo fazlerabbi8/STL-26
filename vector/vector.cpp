@@ -26,7 +26,12 @@ int main()
     arr.insert(arr.begin(), 7);
 
     arr.erase(arr.begin());
-    
+
+    if(arr.empty()){
+        cout << "vector is empty." << "\n";
+    }else{
+        cout << "vector is not empty." << "\n";
+    }
     for (auto it = arr.begin(); it != arr.end(); it++)
     {
         cout << *it << " ";
