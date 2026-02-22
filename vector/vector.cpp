@@ -19,7 +19,13 @@ int main()
     cout << arr.front() << "\n";
     cout << arr.back() << "\n";
     cout << arr.size() << "\n";
-    // cout << arr.back() << "\n";
-
+    cout << arr[arr.size() - 1] << "\n";
+    
+    arr.pop_back();
+    
+    for (auto it = arr.begin(); it != arr.end(); it++)
+    {
+        cout << *it << " ";
+    }
     return 0;
 }
