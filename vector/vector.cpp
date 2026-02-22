@@ -22,6 +22,8 @@ int main()
     cout << arr[arr.size() - 1] << "\n";
     
     arr.pop_back();
+
+    arr.insert(arr.begin(), 7);
     
     for (auto it = arr.begin(); it != arr.end(); it++)
     {
