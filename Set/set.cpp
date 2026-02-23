@@ -18,7 +18,15 @@ int main(){
         cout << n << " " << "is present in set." << "\n";
     }
 
+    s.erase(++s.begin());
+    // s.erase(next(s.begin(), 1)); Alternative to erase
     
+    // Alternative to erase
+    // if (s.size() >= 2) {
+    //     auto it = s.begin();
+    //     advance(it, 2); // move to 2nd element
+    //     s.erase(it);
+    // }
 
     for(auto it = s.begin(); it != s.end(); it++){
         cout << *it << " ";
