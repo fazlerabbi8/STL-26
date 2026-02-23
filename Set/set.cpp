@@ -32,5 +32,9 @@ int main(){
         cout << *it << " ";
     }
 
+    cout << "\n";
+
+    cout << "size of the set: " << s.size() << "\n";
+
     return 0;
 }
