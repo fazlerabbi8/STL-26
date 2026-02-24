@@ -29,9 +29,20 @@ int main()
 
     mp.erase(next(mp.begin(), 2));
 
-     for (auto it = mp.begin(); it != mp.end(); it++)
-    {
-        cout << it->first << "\t" << it->second << "\n";
+    //  for (auto it = mp.begin(); it != mp.end(); it++)
+    // {
+    //     cout << it->first << "\t" << it->second << "\n";
+    // }
+
+    if(mp.empty() == true){
+        cout << "map is empty." << "\n";
+    }else{
+        cout << "map is not empty." << "\n";
     }
+
+    cout << "size of the map: " << mp.size() << "\n";
+
+    mp.clear();
+    
     return 0;
 }
