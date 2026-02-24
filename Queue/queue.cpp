@@ -16,6 +16,7 @@ int main(){
     }
 
     print(q);
-    
+
+    cout << "size of the queue: " << q.size() << "\n";
     return 0;
 }
