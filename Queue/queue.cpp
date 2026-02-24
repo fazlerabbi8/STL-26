@@ -25,6 +25,9 @@ int main()
     cout << "The front element of the queue: " << q.front() << "\n";
     cout << "The last element of the queue: " << q.back() << "\n";
 
-    
+    q.pop();
+
+    print(q);
+
     return 0;
 }
