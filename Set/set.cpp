@@ -16,14 +16,16 @@ int main()
 
     cout << "\n";
 
-    int n = 7;
-    if (s.find(7) != s.end())
-    {
-        cout << n << " " << "is present in set." << "\n";
-    }
+    cout << s.count(9) << "\n";
 
-    // s.erase(++s.begin());
-    s.erase(next(s.begin(), 2)); // Alternative to erase
+    // int n = 7;
+    // if (s.find(7) != s.end())
+    // {
+    //     cout << n << " " << "is present in set." << "\n";
+    
+
+    // s.erase(++s.begin()); // erage 2nd element
+    // s.erase(next(s.begin(), 2)); // Alternative to erase
 
     // Alternative to erase
     // if (s.size() >= 2) {
@@ -32,24 +34,25 @@ int main()
     //     s.erase(it);
     // }
 
-    for (auto it = s.begin(); it != s.end(); it++)
-    {
-        cout << *it << " ";
-    }
+    // for (auto it = s.begin(); it != s.end(); it++)
+    // {
+    //     cout << *it << " ";
+    // }
 
-    cout << "\n";
+    // cout << "\n";
 
-    cout << "size of the set: " << s.size() << "\n";
+    // cout << "size of the set: " << s.size() << "\n";
 
-    s.clear();
-    
-    if (s.empty() == true)
-    {
-        cout << "set is empty." << "\n";
-    }
-    else
-    {
-        cout << "set is not empty." << "\n";
-    }
+    // s.clear();
+
+    // if (s.empty() == true)
+    // {
+    //     cout << "set is empty." << "\n";
+    // }
+    // else
+    // {
+    //     cout << "set is not empty." << "\n";
+    // }
+
     return 0;
 }
