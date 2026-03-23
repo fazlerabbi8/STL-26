@@ -25,7 +25,7 @@ int main()
     
 
     // s.erase(++s.begin()); // erage 2nd element
-    // s.erase(next(s.begin(), 2)); // Alternative to erase
+    s.erase(next(s.begin(), 2)); // Alternative to erase
 
     // Alternative to erase
     // if (s.size() >= 2) {
@@ -34,10 +34,10 @@ int main()
     //     s.erase(it);
     // }
 
-    // for (auto it = s.begin(); it != s.end(); it++)
-    // {
-    //     cout << *it << " ";
-    // }
+    for (auto it = s.begin(); it != s.end(); it++)
+    {
+        cout << *it << " ";
+    }
 
     // cout << "\n";
 
