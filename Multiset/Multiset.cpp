@@ -14,7 +14,7 @@ int main()
     // }
     ms.insert(5);
     ms.insert(3);
-    ms.insert(3);
+    ms.insert(2);
     ms.insert(7);
     ms.insert(3);
 
@@ -32,7 +32,13 @@ int main()
     // ms.erase(3);
 
     // erase just one
-    ms.erase(ms.find(3));
+    // ms.erase(ms.find(3));
+
+    auto l = ms.lower_bound(3);
+    auto u = ms.upper_bound(3);
+
+    cout << "lower_bound(3) = " << *l << "\n";  
+    cout << "upper_bound(3) = " << *u << "\n";
 
     for (auto x : ms)
     {
