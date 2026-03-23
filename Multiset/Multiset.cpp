@@ -41,10 +41,13 @@ int main()
     cout << "lower_bound(3) = " << *lo << "\n";
     cout << "upper_bound(3) = " << *up << "\n";
 
+    //  structured bindings 
     auto [l, u] = ms.equal_range(3);
     cout << *l << " ";
     cout << *u;
     cout << "\n";
+
+    ms.erase(l, u);
 
     for (auto x : ms)
     {
