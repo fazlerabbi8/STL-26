@@ -26,7 +26,13 @@ int main()
     // }
     // cout << "\n";
 
-    cout << ms.count(7) << "\n";
+    // cout << ms.count(7) << "\n";
+
+    // erase all 3
+    // ms.erase(3);
+
+    // erase just one
+    ms.erase(ms.find(3));
 
     for (auto x : ms)
     {
