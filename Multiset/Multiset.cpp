@@ -34,11 +34,17 @@ int main()
     // erase just one
     // ms.erase(ms.find(3));
 
-    auto l = ms.lower_bound(3);
-    auto u = ms.upper_bound(3);
+    // finding upper and lower bound
+    auto lo = ms.lower_bound(3);
+    auto up = ms.upper_bound(3);
 
-    cout << "lower_bound(3) = " << *l << "\n";  
-    cout << "upper_bound(3) = " << *u << "\n";
+    cout << "lower_bound(3) = " << *lo << "\n";
+    cout << "upper_bound(3) = " << *up << "\n";
+
+    auto [l, u] = ms.equal_range(3);
+    cout << *l << " ";
+    cout << *u;
+    cout << "\n";
 
     for (auto x : ms)
     {
