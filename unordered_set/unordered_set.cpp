@@ -14,7 +14,18 @@ int main()
     }
 
     u_set.emplace(10);
-    
+
+    auto it = u_set.find(2);
+    if(it != u_set.end())
+    {
+        cout << "Element Found" << *it << "\n";
+    }
+    else
+    {
+        cout << "Element is not found" << "\n";
+    }
+
+
     for(auto x : u_set)
     {
         cout << x << "\n";
