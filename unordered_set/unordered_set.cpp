@@ -13,6 +13,8 @@ int main()
         u_set.insert(x);
     }
 
+    u_set.emplace(10);
+    
     for(auto x : u_set)
     {
         cout << x << "\n";
