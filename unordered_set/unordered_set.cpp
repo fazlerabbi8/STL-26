@@ -14,6 +14,8 @@ int main()
     }
 
     u_set.emplace(10);
+    u_set.emplace(5);
+    u_set.emplace(2);
 
     auto it = u_set.find(2);
     if(it != u_set.end())

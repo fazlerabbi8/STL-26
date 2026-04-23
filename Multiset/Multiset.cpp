@@ -49,8 +49,15 @@ int main()
 
     ms.erase(l, u);
 
+    // for (auto x : ms)
+    // {
+    //     cout << x << " ";
+    // }
+
+    ms.clear();
     for (auto x : ms)
     {
         cout << x << " ";
     }
+    cout << ms.size();
 }
