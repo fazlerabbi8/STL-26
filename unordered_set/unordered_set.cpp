@@ -21,14 +21,14 @@ int main()
     // auto it = u_set.find(3);
     if(it != u_set.end())
     {
-        cout << "Element Found" << *it << "\n";
+        cout << "Element Found" << " " << *it << "\n";
     }
     else
     {
         cout << "Element is not found" << "\n";
     }
 
-
+    cout << "u_set size: " <<  u_set.size() << "\n";
     for(auto x : u_set)
     {
         cout << x << "\n";
