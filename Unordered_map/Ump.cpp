@@ -11,9 +11,18 @@ int main()
     {
         freq[x]++;
     }
-    
+
     for (auto it : freq)
     {
         cout << it.first << " " << it.second << endl;
+    }
+
+    if (freq.find(3) == freq.end())
+    {
+        cout << "Key is not present." << "\n";
+    }
+    else
+    {
+        cout << "Key is present." << "\n";
     }
 }
