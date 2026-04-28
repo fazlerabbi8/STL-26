@@ -32,7 +32,8 @@ int main()
     pair<string, double> myShop ("python", 2.0);
 
     umap.insert(myShop);
-    umap
+    umap.insert(myBooks.begin(), myBooks.end());
+    
     for(auto& x: umap)
     {
         cout << x.first << "->" << x.second << "\n";
