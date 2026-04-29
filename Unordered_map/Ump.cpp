@@ -27,15 +27,27 @@ int main()
     // }
 
     unordered_map<string, int>
-    umap, myBooks ={{"Java", 2}, {"C++", 2}};
+        umap, myBooks = {{"Java", 2}, {"C++", 2}};
 
-    pair<string, double> myShop ("python", 2.0);
+    pair<string, double> myShop("python", 2.0);
 
     umap.insert(myShop);
     umap.insert(myBooks.begin(), myBooks.end());
-    
-    for(auto& x: umap)
+
+    for (auto &x : umap)
     {
         cout << x.first << "->" << x.second << "\n";
+    }
+    string input;
+    getline(cin, input);
+
+    auto got = umap.find(input);
+    if (got == umap.end())
+    {
+        cout << "Not Found";
+    }
+    else
+    {
+        cout << "Found";
     }
 }
