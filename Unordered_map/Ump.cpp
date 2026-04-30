@@ -34,20 +34,28 @@ int main()
     umap.insert(myShop);
     umap.insert(myBooks.begin(), myBooks.end());
 
+    // for (auto &x : umap)
+    // {
+    //     cout << x.first << "->" << x.second << "\n";
+    // }
+
+    // finding element
+    // string input;
+    // getline(cin, input);
+
+    // auto got = umap.find(input);
+    // if (got == umap.end())
+    // {
+    //     cout << "Not Found";
+    // }
+    // else
+    // {
+    //     cout << "Found";
+    // }
+
+    umap.erase("Java");
     for (auto &x : umap)
     {
         cout << x.first << "->" << x.second << "\n";
-    }
-    string input;
-    getline(cin, input);
-
-    auto got = umap.find(input);
-    if (got == umap.end())
-    {
-        cout << "Not Found";
-    }
-    else
-    {
-        cout << "Found";
     }
 }
