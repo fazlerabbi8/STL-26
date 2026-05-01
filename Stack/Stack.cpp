@@ -19,6 +19,15 @@ int main()
 
     cout << "Size of the Stack: " << myStack.size() << "\n";
 
+    // check empty or not
+    if(myStack.empty())
+    {
+        cout << "Stack is empty" << "\n";
+    }
+    else
+    {
+        cout << "Stack is not empty." << "\n";
+    }
     // print stack
     while (!myStack.empty())
     {
