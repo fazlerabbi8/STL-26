@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -7,20 +7,22 @@ int main()
     int n;
 
     cout << "Enter Number of Elements: ";
-    cin>> n;
+    cin >> n;
 
     cout << "Enter Elements: ";
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         int x;
         cin >> x;
         myStack.push(x);
     }
 
+    cout << "Size of the Stack: " << myStack.size() << "\n";
+
     // print stack
-    while(!myStack.empty())
+    while (!myStack.empty())
     {
-        cout << myStack.top() << " ";
+        cout << myStack.top() << " " << "\n";
         myStack.pop();
     }
 }
