@@ -17,5 +17,10 @@ int main()
         myStack.push(x);
     }
 
-    
+    // print stack
+    while(!myStack.empty())
+    {
+        cout << myStack.top() << " ";
+        myStack.pop();
+    }
 }
