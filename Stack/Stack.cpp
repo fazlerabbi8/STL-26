@@ -35,7 +35,20 @@ int main()
     st.emplace("Ali");
     st.emplace("Abrar");
 
+    // prime stack
+    stack<int> pst;
+    cout << "Enter Number of Prime Elements: ";
+    cin >> n;
 
+    cout << "Enter Elements: ";
+    for (int i = 0; i < n; i++)
+    {
+        int x;
+        cin >> x;
+        pst.push(x);
+    }
+    // swap 
+    myStack.swap(pst);
     // print stack
     while (!myStack.empty())
     {
@@ -47,5 +60,10 @@ int main()
     {
         cout << st.top() << " " << "\n";
         st.pop();
+    }
+    while (!pst.empty())
+    {
+        cout << pst.top() << " " << "\n";
+        pst.pop();
     }
 }
