@@ -34,10 +34,18 @@ int main()
     st.emplace("Rabbi");
     st.emplace("Ali");
     st.emplace("Abrar");
+
+
     // print stack
     while (!myStack.empty())
     {
         cout << myStack.top() << " " << "\n";
         myStack.pop();
+    }
+
+    while (!st.empty())
+    {
+        cout << st.top() << " " << "\n";
+        st.pop();
     }
 }
