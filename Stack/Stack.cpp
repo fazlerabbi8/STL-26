@@ -28,6 +28,12 @@ int main()
     {
         cout << "Stack is not empty." << "\n";
     }
+
+    // create a string stack
+    stack<string> st;
+    st.emplace("Rabbi");
+    st.emplace("Ali");
+    st.emplace("Abrar");
     // print stack
     while (!myStack.empty())
     {
