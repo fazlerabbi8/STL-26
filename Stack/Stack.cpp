@@ -40,13 +40,15 @@ int main()
     cout << "Enter Number of Prime Elements: ";
     cin >> n;
 
-    cout << "Enter Elements: ";
+    cout << "Enter Elements: " << "\n";
     for (int i = 0; i < n; i++)
     {
         int x;
         cin >> x;
         pst.push(x);
     }
+
+    cout << "Top element of the stack: " << pst.top() << "\n";
     // swap 
     myStack.swap(pst);
     // print stack
