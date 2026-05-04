@@ -54,5 +54,15 @@ int main()
     //     cout << "set is not empty." << "\n";
     // }
 
+    set<int>primeSet;
+    for (int i = 0; i < 10; i++)
+    {
+        primeSet.insert(i);
+    }
+
+    for (auto it = primeSet.begin(); it != primeSet.end(); it++)
+    {
+        cout << *it << " ";
+    }
     return 0;
 }
