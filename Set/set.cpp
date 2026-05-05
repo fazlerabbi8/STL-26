@@ -22,7 +22,6 @@ int main()
     // if (s.find(7) != s.end())
     // {
     //     cout << n << " " << "is present in set." << "\n";
-    
 
     // s.erase(++s.begin()); // erage 2nd element
     s.erase(next(s.begin(), 2)); // Alternative to erase
@@ -54,15 +53,15 @@ int main()
     //     cout << "set is not empty." << "\n";
     // }
 
-    set<int>primeSet;
-    for (int i = 0; i < 10; i++)
+    set<int> primes;
+    for (int i = 0; i < n; i++)
     {
-        primeSet.insert(i);
+        int x;
+        cin >> x;
+        primes.insert(x);
     }
 
-    for (auto it = primeSet.begin(); it != primeSet.end(); it++)
-    {
-        cout << *it << " ";
-    }
+    for (int p : primes)
+        cout << p << " ";
     return 0;
 }
