@@ -9,6 +9,7 @@ int main()
     nums.push_back(7);
     nums.push_back(8);
 
+    cout << "Size of the deque: " << nums.size() << "\n";
     // print deque
     for(auto x: nums)
     {
